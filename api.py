@@ -6,7 +6,7 @@ app= Flask(__name__)
 numeros = []
 @app.route("/sumar", methods=['POST'])
 def sumar_numeros():
-    resultado = int(request.json['num1']) * int(request.json['num2'])
+    resultado = int(request.json['num1'])+ int(request.json['num2'])
     print(resultado)
     return str(resultado)
 
